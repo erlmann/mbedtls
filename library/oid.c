@@ -478,6 +478,11 @@ FN_OID_GET_DESCRIPTOR_ATTR1(mbedtls_oid_get_sig_alg_desc,
                             sig_alg,
                             const char *,
                             description)
+FN_OID_GET_DESCRIPTOR_ATTR1(mbedtls_oid_get_sig_alg_name,
+                            oid_sig_alg_t,
+                            sig_alg,
+                            const char *,
+                            name)
 #endif
 
 FN_OID_GET_ATTR2(mbedtls_oid_get_sig_alg,

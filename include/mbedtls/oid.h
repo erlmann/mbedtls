@@ -556,6 +556,16 @@ int mbedtls_oid_get_sig_alg(const mbedtls_asn1_buf *oid,
 int mbedtls_oid_get_sig_alg_desc(const mbedtls_asn1_buf *oid, const char **desc);
 
 /**
+ * \brief          Get the name of the given  SignatureAlgorithm OID
+ *
+ * \param oid      OID to use
+ * \param name     place to store string pointer
+ *
+ * \return         0 if successful, or MBEDTLS_ERR_OID_NOT_FOUND
+ */
+int mbedtls_oid_get_sig_alg_name(const mbedtls_asn1_buf *oid, const char **name);
+
+/**
  * \brief          Translate md_type and pk_type into SignatureAlgorithm OID
  *
  * \param md_alg   message digest algorithm
